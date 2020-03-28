@@ -1,0 +1,401 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+/*reset end*/
+
+/*general stuff*/
+a
+{
+  text-decoration: none;
+  color: grey;
+}
+
+img
+{
+  width: 100%;
+}
+h1
+{
+  text-align: center;
+  font-size: 3em;
+  color: #03acd6;
+}
+h2
+{
+  font-size: 2em;
+  color: #04beec;
+}
+h3
+{
+  text-align: center;
+  font-size: 2em;
+  color: #04beec;
+}
+
+/*general nav tweaks*/
+header, #nav_spacer
+{
+  height: 100px;
+}
+
+
+/*desktop nav*/
+header
+{
+    position: fixed;
+    width: 100%;
+    z-index: 400;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color:rgb(121, 113, 113);
+}
+
+.logo {
+  cursor: pointer;
+}
+.logoimg{
+    width: 149px;
+}
+
+.nav__links a,
+.contact,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.contact {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  
+}
+
+.contact:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+  z-index: 410;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .contact {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+/*general info section*/
+#general_info
+{
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ebebeb;
+}
+#general_info p 
+{
+  font-size: 1.7em;
+}
+.standards
+{
+  max-width: 800px;
+}
+
+
+/*courses section*/
+#cent
+{
+  max-width: 1000px;
+  margin: auto;
+}
+li
+{
+  text-align: center;
+  font-size: 2em;
+}
+
+/*scedule*/
+table
+{
+  margin: auto;
+  font-size: 2em;
+  border-collapse: separate;
+  border-spacing:50px 5px;
+}
+th, td, tr
+{
+  padding: 5px;
+  
+}
+/*footer*/
+footer
+{
+    background-color: #353535;
+    width: 100%;
+}
+.bott
+{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin: auto;
+    max-width: 1200px;
+}
+.socmed
+{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%; /* or 50% */
+
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.socmed:hover
+{
+    background-color: #03acd6;
+}
+.foot 
+{
+    border-top: 3px double #03acd6;
+    margin: auto;
+}
+.ftr 
+{
+    color: rgba(247, 247, 247, 0.795);
+    text-align: center;
+    font-size: 1.5em;
+}
+.lgobtm
+{
+  width: 70%;
+  margin: auto;
+}
+.ft-link
+{
+  text-decoration: none;
+  color: #2091ad;
+}
+
+.ctr
+{
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*contact fourm*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #2091ad;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1d4d58;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

@@ -1,11 +1,215 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>(ETSC) East-Tec Summer Camp</title>
+        <link rel="icon" href="images/logo.png">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <script src="js/script.js"></script>
-    </head>
-    <body>
+        <link rel="stylesheet" type="text/css" href="css/glide.core.css">
+        <link rel="stylesheet" type="text/css" href="css/glide.theme.css">
         
+        <script src="js/script.js"></script>
+        
+    </head>
+    <body">
+        <!--navagation section-->
+        <header>
+            <a class="logo" href="index.html"><img class="logoimg" src="images/logo.png" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#nav_spacer">About</a></li>
+                    <li><a href="#avc">Programs</a></li>
+                    <li><a href="#rvr">Reviews</a></li>
+                </ul>
+            </nav>
+            <a class="contact" href="contacts.html">Contact</a>
+            <p onclick="openNav()" class="menu contact">Menu</p>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay__content">
+                <a href="#general_info">About</a>
+                <a href="#avc">Programs</a>
+                <a href="#rvr">Reviews</a>
+                <a class="contact" href="contacts.html">Contact</a>
+            </div>
+        </div>
+        <div id="nav_spacer"></div>
+
+        <main>
+            <!-- about us, Cleanliness, Safety, services offerd-->
+            <section id="general_info">
+                <!--about us-->
+                <article>
+                    <h1>What is East-Tec?</h1>
+                    <p>
+                        Eastern Tecnoligy (East-Tec) is a educational startup dedicated to providing innovative
+                        programs that prepare young adaults to enter the workforce and pursue continuing education.
+                        East-Tec programs provide campers opportunities to advance their education in a less 
+                        traditinal more exciting enviorment that includes hands on learning with professionals in the field.
+                    </p>
+                </article>
+                    <br>
+                    <br>
+                    <br>
+                <!--services offerd-->
+                <article>
+                    <h1>What we offer</h1>
+                    <p>
+                        The goal of East-Tec is to provide a unique learning experience that is tailored to the individual camper.
+                        We offer both a one week interest program, and a one month deep dive program. The interest program is where
+                        the students will be exposed to new broad concepts to create interest and a desire to learn and push more 
+                        into the field. Our longer deep dive program lets a student not only be exposed to these concepts but get 
+                        the chance to take a closer look, creating their own projects over the course of the program.
+                    </p>
+                </article>
+                <br>
+                <br>
+                <br>
+                <!-- Cleanliness and Safety-->
+                <article>
+                    <h1>Our standards</h1>
+                    <div class="standards">
+                        <h2>Cleanliness</h2>
+                        <p>
+                            A clean camp promotes a comfortable work environment and suggests a first impression of organization and 
+                            professionalism. Camper health is also a reason to regularly remove dust and bacteria. Cleaning may be 
+                            performed as frequently as every day, depending on the size and use of the camp space.
+                        </p>
+                        <br>
+                        <h2>safety</h2>
+                        <p>
+                            Safety is a core corporate value at East-Tec.  Our Safety Policy directly reflects the camps
+                            commitment to safety in the workplace, operations, and a positive safety culture.  This policy applies to all 
+                            personnel and every aspect of the camps activities. It is East-Tec policy to identify and 
+                            comply with all applicable federal and state laws regarding workplace safety, while striving to incorporate industry safety “best practices."
+                            <br><br>
+                            East-Tec utilizes a Safety Management System (SMS) to reduce risk of injury to campers, to
+                            prevent accidents, minimize damage to equipment and property, and to work proactively to identify and reduce 
+                            the existence of hazards and risk in the work environment. To that end, we continuously examine our operation
+                            for those hazards and find ways to minimize them.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <!--activites-->
+            <section>
+                <br>
+                <br>
+                <br>
+                <div id="cent">
+                    <div class="glide" id="avc">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                            <li class="glide__slide"><img src="images/construction.jpg"></li>
+                            <li class="glide__slide"><img src="images/culinary.jpg"></li>
+                            <li class="glide__slide"><img src="images/health.jpg"></li>
+                            <li class="glide__slide"><img src="images/IT.jpg"></li>
+                            <li class="glide__slide"><img src="images/manufacturing.jpg"></li>
+                            <li class="glide__slide"><img src="images/mecanic.png"></li>
+                            <li class="glide__slide"><img src="images/publicsafe.jpg"></li>
+                            <li class="glide__slide"><img src="images/STEM.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <article>
+                    <h1 >Avalable courses</h1>
+                    <ul>
+                        <li><a href="construction.html">construction</a></li><br>
+                        <li><a href="culinary.html">culinary arts</a></li><br>
+                        <li><a href="health.html">health sciences</a></li><br>
+                        <li><a href="IT.html">IT services</a></li><br>
+                        <li><a href="manufacturing.html">manufacturing tecnology</a></li><br>
+                        <li><a href="mecanic.html">mecanical repair</a></li><br>
+                        <li><a href="publicsafe.html">public safety</a></li><br>
+                        <li><a href="STEM.html">STEM learning</a></li>
+                    </ul>
+                </article>
+            </section>
+            <br><br><br><br id="rvr">
+            <!--reviews-->
+            <section class="ctr">
+                <h1>Reviews</h1>
+
+                <h2>5/5</h2>
+                my son had an amazing time! "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <h2>4/5</h2>
+                my kids loved it! other then timmy who has yet to return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <h2>5/5</h2>
+                amazing staff! "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+            </section>
+        </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--the footer-->
+        <footer>
+            <div class="bott">
+             <article>
+                 <br>
+                 <h3>Buisness license</h3>
+                 <br> <hr class="foot"> <br><br>
+                 <P class="ftr">
+                     <img src="images/bl.webp" alt="">
+                 </P>
+             </article>
+             <article>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="lgobtm"><img  src="images/logo.png" alt=""></div>
+             </article>
+             <article>
+                 <br>
+                 <h3>CONTACT / APPOINTMENT</h3> <br>
+                 <hr class="foot"> <br><br>
+                 <p class="ftr">
+
+                        123-456-2890
+                    <br>
+                    <br>
+                    <br>
+                         1234 e. enrit Drive <br>
+                         Carter, pl 55643 <br>
+                     <br><br>
+                     <a href=""><img class="socmed" src="images/yt.png" alt=""></a>
+                     <a href=""><img class="socmed" src="images/tw.png" alt=""></a>
+                     <a href=""><img class="socmed" src="images/ig.png" alt=""></a>
+                     <a href=""><img class="socmed" src="images/fb.svg" alt=""></a><br>
+                     <br><br>
+                     <a class="ft-link" href="contacts.html">
+                         to inquire about scedualing an appointment or to ask a question please click here
+                     </a>
+                 </p>
+                 <br>
+                 <br>
+                 <br>
+             </article>
+            </div>
+         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            const config = { 
+                type: "carousel",
+                perView: 1,
+                autoplay: 3000
+            };
+            new Glide('.glide', config).mount();
+        </script>
+         
     </body>
 </html>

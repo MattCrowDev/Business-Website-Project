@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="images/logo.png">
+        <title>construction</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="index.html"><img class="logoimg" src="images/logo.png" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Front page</a></li>
+                </ul>
+            </nav>
+            <a class="contact" href="contacts.html">Contact</a>
+            <p onclick="openNav()" class="menu contact">Menu</p>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay__content">
+                <a href="index.html">Front page</a>
+                <a class="contact" href="contacts.html">Contact</a>
+            </div>
+        </div>
+        <div id="nav_spacer"></div>
+
+        <div class="container">
+            <form>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="email">email</label>
+              <input type="text" id="email" name="email" placeholder="Your last name..">
+          
+              <label for="question">question</label>
+              <textarea id="question" name="question" placeholder="what you inquire..." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </body>
+</html>
